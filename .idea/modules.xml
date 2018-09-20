@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/Deeplearning.iml" filepath="$PROJECT_DIR$/.idea/Deeplearning.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../bpTest/.idea/bpTest.iml" filepath="$PROJECT_DIR$/../bpTest/.idea/bpTest.iml" />
+    </modules>
+  </component>
+</project>
