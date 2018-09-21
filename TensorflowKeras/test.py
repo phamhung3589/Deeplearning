@@ -90,7 +90,7 @@ def model(X_train, y_train, X_test, y_test, layer_dims, learning_rate=0.0075, nu
             for minibatch in minibatchs:
                 (minibatch_X, minibatch_Y) = minibatch
                 _, minibatch_cost = sess.run([optimizer, cost], feed_dict={X: minibatch_X, y: minibatch_Y})
-                epoch_cost += cost / len(minibatchs)
+                epoch_cost += minibatch_cost / len(minibatchs)
 
             if epoch % 100 == 0:
                 print("Cost after epoch", epoch, epoch_cost)
@@ -103,7 +103,7 @@ def model(X_train, y_train, X_test, y_test, layer_dims, learning_rate=0.0075, nu
 
         print("Train Accuracy:", accuracy.eval({X: X_train, y: y_train}))
         print("Test Accuracy:", accuracy.eval({X: X_test, y: y_test}))
-    return
+    return parameters
 
 
 def run_model():
